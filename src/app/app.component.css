@@ -1,0 +1,56 @@
+div {
+  margin: 20px; /* Adjusts margin around the entire div */
+}
+
+div h5,
+div h1 {
+  margin-left: 140px; /* Adjusts margin from the left */
+}
+
+div h5 {
+  margin-bottom: 5px; /* Decreases space between h5 and h1 */
+  color: #999999; 
+}
+
+div h1 {
+  margin-top: 0; /* Removes any default top margin */
+}
+
+.responsive-headings h5 {
+  font-size: 1.2rem; /* Default font size for h5 */
+}
+
+.responsive-headings h1 {
+  font-size: 2rem; /* Default font size for h1 */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .responsive-headings h5 {
+      font-size: 1rem; /* Adjust for medium screens */
+  }
+  
+  .responsive-headings h1 {
+      font-size: 1.8rem; /* Adjust for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-headings h5 {
+      font-size: 0.9rem; /* Adjust for small screens */
+  }
+  
+  .responsive-headings h1 {
+      font-size: 1.6rem; /* Adjust for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-headings h5 {
+      font-size: 0.8rem; /* Adjust for very small screens */
+  }
+  
+  .responsive-headings h1 {
+      font-size: 1.4rem; /* Adjust for very small screens */
+  }
+}

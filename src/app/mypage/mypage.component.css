@@ -1,0 +1,336 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Adds shadow to the container */
+  box-shadow: 10 20px 100px rgba(26, 37, 10, 0.1);
+  /* background-color: #f0f0f0; */
+  background-color: #f0f0f07e;
+
+
+}
+
+h1 {
+  color: #262525;
+}
+
+.left-div {
+  width: 50%;
+  padding: 20px;
+  margin-left: 100px;
+}
+
+.left-div h2 {
+  margin-bottom: 10px;
+}
+
+.left-div p {
+  margin-bottom: 20px;
+}
+
+.test-box {
+  background-color: green;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 217px;
+  border: none;
+  /* Remove default button border */
+  cursor: pointer;
+  /* Add pointer cursor on hover */
+}
+
+
+.right-div {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.right-div img {
+  max-width: 100%;
+  border-radius: 10px;
+  /* Optional: to give the image rounded corners */
+}
+
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.left-div2 {
+  flex: 1;
+  padding: 10px;
+}
+
+.right-div2 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 10px;
+  margin-right: 120px;
+}
+
+.right-div3 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 10px;
+  margin-right: 120px;
+}
+
+.right-div2 img {
+  margin-right: 15px;
+  width: 130px;
+
+}
+
+.right-div3 img {
+  margin-right: 15px;
+  width: 130px;
+
+}
+
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.phase-content {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.text-content h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.text-content p {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+}
+
+.text-content {
+  margin-top: 30px;
+}
+
+
+.phase-content h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.phase-content p {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+}
+
+.phase-content {
+  margin-top: 30px;
+}
+
+
+
+.left-div2 {
+  margin-left: 140px;
+
+}
+
+
+
+
+
+
+/* 
+.left-div3 {
+  flex: 1;
+  padding: 10px;
+}
+
+.right-div3 {
+ 
+  display: flex;
+  flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px; 
+}
+
+.right-div3 img {
+
+width: 140px; 
+height: auto; 
+margin-right: 15px;
+}
+
+.phase-content {
+display: flex;
+flex-direction: column;
+}
+
+
+
+.phase-content h1 {
+margin: 0;
+font-size: 24px;
+}
+.phase-content p {
+margin: 5px 0 0 0;
+font-size: 16px;
+}
+
+.phase-content{
+margin-top: 30px;
+}
+
+.left-div3{
+margin-left: 140px;
+
+} */
+
+
+
+@media (max-width: 768px) {
+  .left-div h1 {
+    font-size: 1.5rem;
+    /* Adjust font size for smaller screens */
+  }
+
+  .left-div p {
+    font-size: 0.9rem;
+    /* Adjust font size for smaller screens */
+  }
+
+  .left-div .test-box {
+    font-size: 0.9rem;
+    /* Adjust button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .left-div h1 {
+    font-size: 1.2rem;
+    /* Adjust font size for very small screens */
+  }
+
+  .left-div p {
+    font-size: 0.8rem;
+    /* Adjust font size for very small screens */
+  }
+
+  .left-div .test-box {
+    font-size: 0.8rem;
+    /* Adjust button font size */
+  }
+
+  .container {
+    flex-direction: column;
+    /* Stack divs vertically on very small screens */
+    align-items: center;
+    /* Center align the divs */
+  }
+
+  .left-div,
+  .right-div {
+    max-width: 100%;
+    /* Full width for the divs */
+    text-align: center;
+    /* Center align text in the left div */
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .left-div2 h1 {
+    font-size: 1.5rem;
+    /* Adjust font size for smaller screens */
+  }
+
+  .text-content h1 {
+    font-size: 1.2rem;
+    /* Adjust font size for smaller screens */
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container2 {
+    flex-direction: column;
+    /* Stack divs vertically on very small screens */
+    align-items: center;
+    /* Center align the divs */
+  }
+
+  .left-div2,
+  .right-div2 {
+    max-width: 100%;
+    /* Full width for the divs */
+    text-align: center;
+    /* Center align text in the left div */
+  }
+
+  .right-div2 {
+    padding: 10px;
+    /* Adjust padding */
+  }
+
+  .text-content {
+    margin-top: 10px;
+    /* Adjust margin-top */
+  }
+
+  .left-div2 h1 {
+    font-size: 1.2rem;
+    /* Adjust font size for very small screens */
+  }
+
+  .text-content h1 {
+    font-size: 1rem;
+    /* Adjust font size for very small screens */
+  }
+
+  .text-content p {
+    font-size: 0.8rem;
+    /* Adjust font size for very small screens */
+  }
+}
+
+.container3 {
+  text-align: center;
+  margin-top: 100px;
+  background-color: #f0f0f0;
+}
+
+.no-bullets {
+  list-style-type: none;
+  /* Removes bullet points */
+  padding: 0;
+  /* Removes left padding */
+  margin: 0;
+  /* Removes top and bottom margin */
+}
+
+
+/*third section */
+
